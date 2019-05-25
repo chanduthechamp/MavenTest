@@ -1,7 +1,5 @@
 pipeline {
-  agent{
-    docker 'ubuntu'
-  }
+  agent any
   stages {
     stage ('Test echo on ubuntu') {
       steps {
