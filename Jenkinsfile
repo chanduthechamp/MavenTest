@@ -3,9 +3,10 @@ pipeline {
     docker 'ubuntu'
   }
   stages {
-    stage ('Test echo on ubuntu')
-    {
-      echo "How are you guys"
+    stage ('Test echo on ubuntu') {
+      steps {
+        echo "How are you guys"
+      }
     }
   }
 }
